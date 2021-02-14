@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7cb9dd92a1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="wallet">
+      <div class="container">
+        <!-- Top Bar Starts here -->
+        <div class="top-bar">
+          <div class="logo-box">
+            <a href="#" class="logo"
+              ><img class="logo-img" src="./imgs/logo.png" alt="" /><span
+                class="text-green"
+                >SUPP.</span
+              >
+              <span class="text-lg">NETWORK</span>
+            </a>
+          </div>
+          <div class="right-menu-wrapper">
+            <div class="right-menu-item">How it works?</div>
+            <div class="right-menu-item">DAO</div>
+            <div
+              class="toggle"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
+              <div class="slide">
+                <span class="fa fa-circle-o"></span>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content modal-custom">
+                  <div class="modal-header modal-border text-center">
+                    <h5 class="modal-title w-100" id="exampleModalLongTitle">
+                      Wallet
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="connection-card-wrapper">
+                      <div class="connection-card">
+                        <div class="connect-title-box">
+                          <h4 class="connect-title">
+                            Connection with staking pool will be available after
+                            the token sale. Follow our telegram channel and stay
+                            up to date.
+                          </h4>
+                        </div>
+                        <div class="connect-btn-box">
+                          <button
+                            class="connect-btn btn btn-primary"
+                            data-dismiss="modal"
+                          >
+                            connect
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer modal-border">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      close
+                    </button>
+                    <!-- <button
+                      class="connect-btn btn btn-primary"
+                      data-dismiss="modal"
+                    >
+                      connect
+                    </button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Top Bar ends here -->
+        <!-- ---------------------Balance Section Starts Here--------------- -->
+        <div class="row mt-5 mb-5">
+          <div class="col-lg-6">
+            <!-- first inner row -->
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="supp-balance-card bx-shadow d-flex justify-content-around align-items-center"
+                >
+                  <div class="logo-img-box">
+                    <img class="logo-img" src="./imgs/logo.png" alt="" />
+                  </div>
+                  <div class="supp-balance-text-box">
+                    <h6 class="text-white bal-title">Your SUPP balance</h6>
+                    <h6 class="bal-amount text-white"></h6>
+                  </div>
+                  <div class="status-box">
+                    <h6 class="text-white">Wallet Status</h6>
+                    <h6 class="text-white connect-text text-danger">
+                      not connected
+                      <span class="text-danger ml-2"
+                        ><i class="fas fa-lock"></i
+                      ></span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd inner row -->
+            <div class="row mt-3">
+              <div class="col-lg-6">
+                <div
+                  class="pool-balance-card bx-shadow d-flex flex-column justify-content-around align-items-center"
+                >
+                  <h6 class="text-white">Staking Pool balance</h6>
+                  <h6 class="pool-bal-amount text-white"></h6>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="pool-consensus-card bx-shadow d-flex flex-column justify-content-around align-items-center"
+                >
+                  <h6 class="text-white">Staking Pool consensus</h6>
+                  <h6 class="pool-cons text-white"></h6>
+                </div>
+              </div>
+            </div>
+            <!-- 3rd inner row -->
+            <div class="row mt-3">
+              <div class="col-lg-6">
+                <div
+                  class="total-earned-card bx-shadow d-flex flex-column justify-content-around align-items-center"
+                >
+                  <h6 class="text-white">Total earned</h6>
+                  <h6 class="total-earn text-white"></h6>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="total-earned-card bx-shadow d-flex flex-column justify-content-around align-items-center"
+                >
+                  <h6 class="text-white">Next reward block</h6>
+                  <h6 class="text-white">11043042</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="shareholders-card bx-shadow">
+              <h6 class="text-white">Staking Pool table sec</h6>
+              <div class="unlock-wallet">
+                <h6 class="text-white">Unlock your wallet</h6>
+              </div>
+              <div class="users-list">
+                <div class="table-responsive">
+                  <table class="table table-light table-hover">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="user-icon-bg"
+                            ><i class="fas fa-user"></i
+                          ></span>
+                        </td>
+                        <td>Balance 28550</td>
+                        <td>5.71%</td>
+                        <td>0xD0c986905..</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="user-icon-bg"
+                            ><i class="fas fa-user"></i
+                          ></span>
+                        </td>
+                        <td>Balance 28550</td>
+                        <td>5.71%</td>
+                        <td>0xD0c986905B..</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="user-icon-bg"
+                            ><i class="fas fa-user"></i
+                          ></span>
+                        </td>
+                        <td>Balance 28550</td>
+                        <td>5.71%</td>
+                        <td>0xD0c986905B..</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------Balance Section Ends here-------------------- -->
+      </div>
+    </section>
+    <script src="./js/jquery-3.5.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
